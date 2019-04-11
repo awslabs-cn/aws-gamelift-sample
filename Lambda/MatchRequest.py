@@ -36,8 +36,10 @@ def handler(event, context):
     elif result['Item']['Password'] != playerPass:
         print(result)
         return response
+    else:
+        playerScore = result['Item']['Score']
     
-    playerScore = result['Item']['Score']
+    
     playerAttr = {'score': {'N': int(playerScore) }}
     
     # Auth OK, Match Request Go
