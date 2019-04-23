@@ -3,7 +3,7 @@ import boto3
 
 client = boto3.client('gamelift')
 
-def lambda_handler(event, context):
+def handler(event, context):
     playerId = event['PlayerName'] 
     ticketId = event['TicketId']
     

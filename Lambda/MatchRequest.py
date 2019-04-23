@@ -43,7 +43,7 @@ def handler(event, context):
     # Auth OK, Match Request Go
     try:
         match_response = gl_client.start_matchmaking(
-            ConfigurationName='DummyMatchMakingConfig',
+            ConfigurationName='GomokuServerMatch',
             Players = [ { 'PlayerId' : playerId, 'PlayerAttributes' : playerAttr } ]
             )
     except TypeError as e:

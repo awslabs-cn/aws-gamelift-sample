@@ -3,7 +3,7 @@ import boto3
 import redis
 import json
 
-redis = redis.Redis(host='gomokuranking.nxaab2.0001.apne1.cache.amazonaws.com', port=6379, db=0)
+redis = redis.Redis(host='gomokuranking.**.0001.**.cache.amazonaws.com', port=6379, db=0)
 
 def handler(event, context):
     for record in event['Records']:
